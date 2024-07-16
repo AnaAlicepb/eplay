@@ -62,7 +62,7 @@ const Header = () => {
             </Links>
           </nav>
         </div>
-        <CartButton onClick={openCart}>
+        <CartButton role="button" onClick={openCart}>
           {items.length} <span>- produto(s)</span>
           <img src={carrinho} alt="Carrinho" />
         </CartButton>

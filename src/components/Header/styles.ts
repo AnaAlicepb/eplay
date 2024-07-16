@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { breakpoints, cores } from '../../styles'
-
 export const Links = styled.ul`
   display: flex;
   margin-left: 40px;
