@@ -6,7 +6,7 @@
     <meta name="description" content="Catálogo de jogos desenvolvido em React">
     <meta name="keywords" content="React, TypeScript, Jogos, Catálogo">
     <meta name="author" content="Ana Alice Rodrigues">
-    <title>EPLAY - Catálogo de Jogos</title>
+
 </head>
 <body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; padding: 0;">
 
@@ -130,24 +130,20 @@ EPLAY/
     Abra <a href="http://localhost:3000" target="_blank">http://localhost:3000</a> para visualizar no navegador.</p>
     <p>A página recarregará se você fizer edições.<br>
     Você também verá quaisquer erros de lint no console.</p>
-
     <h3>npm test</h3>
     <p>Inicia o executor de testes no modo interativo de observação.<br>
     Veja a seção sobre <a href="https://create-react-app.dev/docs/running-tests" target="_blank">executar testes</a> para mais informações.</p>
-
     <h3>npm run build</h3>
     <p>Compila o aplicativo para produção na pasta <code>build</code>.<br>
     Ele agrupa corretamente o React no modo de produção e otimiza a construção para o melhor desempenho.</p>
     <p>A construção é minimizada e os nomes dos arquivos incluem os hashes.<br>
     Seu aplicativo está pronto para ser implantado!<br>
     Veja a seção sobre <a href="https://create-react-app.dev/docs/deployment" target="_blank">implantação</a> para mais informações.</p>
-
     <h3>npm run eject</h3>
     <p>Nota: esta é uma operação sem retorno. Uma vez que você <code>eject</code>, não pode voltar atrás!</p>
     <p>Se você não estiver satisfeito com a ferramenta de construção e as escolhas de configuração, pode <code>eject</code> a qualquer momento. Este comando removerá a dependência de construção única do seu projeto.</p>
     <p>Em vez disso, copiará todos os arquivos de configuração e as dependências transitivas (webpack, Babel, ESLint, etc.) diretamente para o seu projeto, para que você tenha controle total sobre eles. Todos os comandos, exceto <code>eject</code>, ainda funcionarão, mas apontarão para os scripts copiados para que você possa ajustá-los. Neste ponto, você está por conta própria.</p>
     <p>Você nunca precisa usar <code>eject</code>. O conjunto de recursos curados é adequado para pequenas e médias implantações, e você não deve se sentir obrigado a usar este recurso. No entanto, entendemos que esta ferramenta não seria útil se você não pudesse personalizá-la quando estivesse pronto para isso.</p>
-
     <h3>Saiba Mais</h3>
     <p>Você pode aprender mais na <a href="https://create-react-app.dev/docs/getting-started" target="_blank">documentação do Create React App</a>.</p>
     <p>Para aprender React, consulte a <a href="https://reactjs.org/" target="_blank">documentação do React</a>.</p>
@@ -156,10 +152,8 @@ EPLAY/
 <section id="contato">
     <h2>Contato</h2>
     <ul>
-        <li><a href="www.linkedin.com/in/anaalice20" target="_blank"><img src="https://img.shields.io/badge/Ana_Alice_Rodrigues-blue?style=for-the-badge" alt="Perfil de Ana Alice Rodrigues"></a></li>
          <li><a href="https://linktr.ee/anaeanali5" target="_blank"><img src="https://img.shields.io/badge/Ana_Alice_Rodrigues-blue?style=for-the-badge" alt="Perfil de Ana Alice Rodrigues"></a></li>
     </ul>
 </section>
-
 </body>
 </html>
