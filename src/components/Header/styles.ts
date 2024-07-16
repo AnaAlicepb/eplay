@@ -17,7 +17,8 @@ export const HeaderBar = styled.header`
   border-radius: 16px;
   margin-bottom: 80px;
 
-  a {
+  a,
+  span {
     color: ${cores.branca};
     text-decoration: none;
     font-weight: bold;
@@ -70,8 +71,9 @@ export const LinksItem = styled.li`
     }
   }
 `
-export const CartButton = styled.a`
+export const CartButton = styled.span`
   display: flex;
+  cursor: pointer;
 
   img {
     margin-left: 16px;
