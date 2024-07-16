@@ -1,46 +1,175 @@
-# Getting Started with Create React App
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de jogos desenvolvido em React">
+    <meta name="keywords" content="React, JavaScript, Jogos, Catálogo">
+    <meta name="author" content="Ana Alice Rodrigues">
+    <title>EPLAY - Catálogo de Jogos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+        }
+        h1, h2, h3, h4 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<header>
+    <h1>EPLAY - Catálogo de Jogos</h1>
+    <img src="" alt="img" width="300" height="auto">
+</header>
 
-## Available Scripts
+<details>
+    <summary>Índice</summary>
+    <ol>
+        <li><a href="#sobre-o-projeto">Sobre o projeto</a></li>
+        <li><a href="#parte-tecnica">Parte Técnica</a></li>
+        <li><a href="#estrutura-dos-arquivos">Estrutura dos Arquivos</a></li>
+        <li><a href="#casos-de-uso">Casos de Uso</a></li>
+        <li><a href="#ferramentas">Ferramentas</a></li>
+        <li><a href="#scripts-disponiveis">Scripts Disponíveis</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ol>
+</details>
 
-In the project directory, you can run:
+<section id="sobre-o-projeto">
+    <h2>Sobre o projeto</h2>
+    <p>
+        Bem-vindo ao repositório do EPLAY, um projeto de catálogo de jogos desenvolvido em React. Este projeto exibe uma lista de jogos com várias categorias e inclui funcionalidades como pesquisa, visualização de detalhes do produto e um carrinho de compras.
+    </p>
+    <p>
+        Proposta de Valor: Oferecer uma experiência de compra conveniente, com uma seleção diversificada de jogos, facilidade de navegação e processos de compra e entrega eficientes.
+    </p>
+</section>
 
-### `npm start`
+<section id="parte-tecnica">
+    <h2>Parte Técnica</h2>
+    <ul>
+        <li><strong>Backend:</strong> PHP é utilizado para a lógica do servidor, gerenciamento de sessões, autenticação de usuários, e manipulação do carrinho de compras.</li>
+        <li><strong>Frontend:</strong> React é usado para criar uma interface de usuário dinâmica e responsiva. Styled Components são utilizados para estilização dos componentes. React Router é usado para gerenciamento de rotas.</li>
+        <li><strong>Banco de Dados:</strong> MySQL para armazenar dados de usuários, produtos, pedidos e detalhes de pagamento.</li>
+    </ul>
+</section>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<section id="estrutura-dos-arquivos">
+    <h2>Estrutura dos Arquivos</h2>
+    <pre>
+<code>
+EPLAY/
+├── src/
+│   ├── components/
+│   │   ├── Cart/
+│   │   │   └── styles.ts
+│   │   ├── Header/
+│   │   │   └── styles.ts
+│   │   ├── Loader/
+│   │   │   └── index.tsx
+│   │   ├── Product/
+│   │   │   └── index.tsx
+│   │   └── ProductsList/
+│   │       └── index.tsx
+│   ├── pages/
+│   │   ├── Home/
+│   │   ├── Categories/
+│   │   ├── Product/
+│   │   └── Checkout/
+│   ├── services/
+│   ├── store/
+│   ├── utils/
+│   ├── App.tsx
+│   ├── index.tsx
+│   ├── routes.tsx
+│   ├── styles.ts
+│   └── ...
+├── public/
+├── .editorconfig
+├── .eslintrc.json
+├── .gitignore
+├── .prettierrc
+├── package-lock.json
+├── package.json
+└── README.md
+</code>
+    </pre>
+</section>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<section id="casos-de-uso">
+    <h2>Casos de Uso</h2>
+    <ul>
+        <li>Exibição de jogos por categorias</li>
+        <li>Pesquisa de jogos</li>
+        <li>Visualização dos detalhes do produto</li>
+        <li>Adição de jogos ao carrinho de compras</li>
+    </ul>
+</section>
 
-### `npm test`
+<section id="ferramentas">
+    <h2>Ferramentas</h2>
+    <ul>
+        <li><img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="Badge React"></li>
+        <li><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="Badge JavaScript"></li>
+        <li><img src="https://img.shields.io/badge/Styled_Components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" alt="Badge Styled Components"></li>
+        <li><img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" alt="Badge React Router"></li>
+        <li><img src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white" alt="Badge Redux"></li>
+        <li><img src="https://img.shields.io/badge/Git-E44C30?style=for-the-badge&logo=git&logoColor=white" alt="Badge Git"></li>
+    </ul>
+</section>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<section id="scripts-disponiveis">
+    <h2>Scripts Disponíveis</h2>
+    <p>Este projeto foi inicializado com Create React App.</p>
+    <h3>npm start</h3>
+    <p>Executa o aplicativo no modo de desenvolvimento.<br>
+    Abra <a href="http://localhost:3000" target="_blank">http://localhost:3000</a> para visualizar no navegador.</p>
+    <p>A página recarregará se você fizer edições.<br>
+    Você também verá quaisquer erros de lint no console.</p>
 
-### `npm run build`
+    <h3>npm test</h3>
+    <p>Inicia o executor de testes no modo interativo de observação.<br>
+    Veja a seção sobre <a href="https://create-react-app.dev/docs/running-tests" target="_blank">executar testes</a> para mais informações.</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    <h3>npm run build</h3>
+    <p>Compila o aplicativo para produção na pasta <code>build</code>.<br>
+    Ele agrupa corretamente o React no modo de produção e otimiza a construção para o melhor desempenho.</p>
+    <p>A construção é minimizada e os nomes dos arquivos incluem os hashes.<br>
+    Seu aplicativo está pronto para ser implantado!<br>
+    Veja a seção sobre <a href="https://create-react-app.dev/docs/deployment" target="_blank">implantação</a> para mais informações.</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    <h3>npm run eject</h3>
+    <p>Nota: esta é uma operação sem retorno. Uma vez que você <code>eject</code>, não pode voltar atrás!</p>
+    <p>Se você não estiver satisfeito com a ferramenta de construção e as escolhas de configuração, pode <code>eject</code> a qualquer momento. Este comando removerá a dependência de construção única do seu projeto.</p>
+    <p>Em vez disso, copiará todos os arquivos de configuração e as dependências transitivas (webpack, Babel, ESLint, etc.) diretamente para o seu projeto, para que você tenha controle total sobre eles. Todos os comandos, exceto <code>eject</code>, ainda funcionarão, mas apontarão para os scripts copiados para que você possa ajustá-los. Neste ponto, você está por conta própria.</p>
+    <p>Você nunca precisa usar <code>eject</code>. O conjunto de recursos curados é adequado para pequenas e médias implantações, e você não deve se sentir obrigado a usar este recurso. No entanto, entendemos que esta ferramenta não seria útil se você não pudesse personalizá-la quando estivesse pronto para isso.</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    <h3>Saiba Mais</h3>
+    <p>Você pode aprender mais na <a href="https://create-react-app.dev/docs/getting-started" target="_blank">documentação do Create React App</a>.</p>
+    <p>Para aprender React, consulte a <a href="https://reactjs.org/" target="_blank">documentação do React</a>.</p>
+</section>
 
-### `npm run eject`
+<section id="contato">
+    <h2>Contato</h2>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/anaalice" target="_blank"><img src="https://img.shields.io/badge/Ana_Alice_Rodrigues-blue?style=for-the-badge" alt="Perfil de Ana Alice Rodrigues"></a></li>
+    </ul>
+</section>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+</body>
+</html>
