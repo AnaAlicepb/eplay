@@ -4,33 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Catálogo de jogos desenvolvido em React">
-    <meta name="keywords" content="React, JavaScript, Jogos, Catálogo">
+    <meta name="keywords" content="React, TypeScript, Jogos, Catálogo">
     <meta name="author" content="Ana Alice Rodrigues">
     <title>EPLAY - Catálogo de Jogos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            padding: 0;
-        }
-        h1, h2, h3, h4 {
-            color: #333;
-        }
-        pre {
-            background-color: #f4f4f4;
-            padding: 10px;
-            border: 1px solid #ddd;
-            overflow-x: auto;
-        }
-        code {
-            background-color: #f4f4f4;
-            padding: 2px 4px;
-            border-radius: 4px;
-        }
-    </style>
 </head>
-<body>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; padding: 0;">
 
 <header>
     <h1>EPLAY - Catálogo de Jogos</h1>
@@ -53,60 +31,69 @@
 <section id="sobre-o-projeto">
     <h2>Sobre o projeto</h2>
     <p>
-        Bem-vindo ao repositório do EPLAY, um projeto de catálogo de jogos desenvolvido em React. Este projeto exibe uma lista de jogos com várias categorias e inclui funcionalidades como pesquisa, visualização de detalhes do produto e um carrinho de compras.
+        Bem-vindo ao repositório do EPLAY, um projeto de catálogo de jogos desenvolvido em React com TypeScript. Este projeto exibe uma lista de jogos com várias categorias e inclui funcionalidades como pesquisa, visualização de detalhes do produto e um carrinho de compras.
     </p>
     <p>
-        Proposta de Valor: Oferecer uma experiência de compra conveniente, com uma seleção diversificada de jogos, facilidade de navegação e processos de compra e entrega eficientes.
+        Proposta de Valor: Oferecer uma experiência de compra conveniente, com uma seleção diversificada de jogos, facilidade de navegação e processos de compra eficientes.
     </p>
 </section>
 
 <section id="parte-tecnica">
     <h2>Parte Técnica</h2>
     <ul>
-        <li><strong>Backend:</strong> PHP é utilizado para a lógica do servidor, gerenciamento de sessões, autenticação de usuários, e manipulação do carrinho de compras.</li>
-        <li><strong>Frontend:</strong> React é usado para criar uma interface de usuário dinâmica e responsiva. Styled Components são utilizados para estilização dos componentes. React Router é usado para gerenciamento de rotas.</li>
-        <li><strong>Banco de Dados:</strong> MySQL para armazenar dados de usuários, produtos, pedidos e detalhes de pagamento.</li>
+        <li><strong>Frontend:</strong> React com TypeScript é usado para criar uma interface de usuário dinâmica e responsiva. Styled Components são utilizados para estilização dos componentes. React Router é usado para gerenciamento de rotas.</li>
+        <li><strong>Controle de Qualidade:</strong> ESLint e Prettier são utilizados para garantir a qualidade do código e um estilo consistente.</li>
     </ul>
 </section>
 
 <section id="estrutura-dos-arquivos">
     <h2>Estrutura dos Arquivos</h2>
-    <pre>
+    <pre style="background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-x: auto;">
 <code>
 EPLAY/
+├── .vscode/
+├── node_modules/
+├── public/
 ├── src/
+│   ├── assets/
 │   ├── components/
+│   │   ├── Banner/
+│   │   ├── Button/
+│   │   ├── Card/
 │   │   ├── Cart/
-│   │   │   └── styles.ts
+│   │   ├── Footer/
+│   │   ├── Gallery/
 │   │   ├── Header/
-│   │   │   └── styles.ts
+│   │   ├── Hero/
 │   │   ├── Loader/
-│   │   │   └── index.tsx
 │   │   ├── Product/
-│   │   │   └── index.tsx
-│   │   └── ProductsList/
-│   │       └── index.tsx
+│   │   ├── ProductsList/
+│   │   ├── Section/
+│   │   └── Tag/
 │   ├── pages/
-│   │   ├── Home/
 │   │   ├── Categories/
-│   │   ├── Product/
-│   │   └── Checkout/
+│   │   ├── Checkout/
+│   │   ├── Home/
+│   │   └── Product/
 │   ├── services/
 │   ├── store/
 │   ├── utils/
 │   ├── App.tsx
 │   ├── index.tsx
+│   ├── react-app-env.d.ts
+│   ├── reportWebVitals.ts
 │   ├── routes.tsx
+│   ├── setupTests.ts
 │   ├── styles.ts
 │   └── ...
-├── public/
 ├── .editorconfig
 ├── .eslintrc.json
 ├── .gitignore
 ├── .prettierrc
 ├── package-lock.json
 ├── package.json
-└── README.md
+├── README.md
+└── tsconfig.json
 </code>
     </pre>
 </section>
@@ -125,10 +112,12 @@ EPLAY/
     <h2>Ferramentas</h2>
     <ul>
         <li><img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="Badge React"></li>
-        <li><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="Badge JavaScript"></li>
+        <li><img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="Badge TypeScript"></li>
         <li><img src="https://img.shields.io/badge/Styled_Components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" alt="Badge Styled Components"></li>
         <li><img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" alt="Badge React Router"></li>
         <li><img src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white" alt="Badge Redux"></li>
+        <li><img src="https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white" alt="Badge ESLint"></li>
+        <li><img src="https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=white" alt="Badge Prettier"></li>
         <li><img src="https://img.shields.io/badge/Git-E44C30?style=for-the-badge&logo=git&logoColor=white" alt="Badge Git"></li>
     </ul>
 </section>
@@ -167,6 +156,7 @@ EPLAY/
 <section id="contato">
     <h2>Contato</h2>
     <ul>
+        <li><a href="https://www.linkedin.com/in/anaalice" target="_blank"><img src="https://img.shields.io/badge/Ana_Alice_Rodrigues-blue?style=for-the-badge" alt="Perfil de Ana Alice Rodrigues"></a></li>
         <li><a href="https://www.linkedin.com/in/anaalice" target="_blank"><img src="https://img.shields.io/badge/Ana_Alice_Rodrigues-blue?style=for-the-badge" alt="Perfil de Ana Alice Rodrigues"></a></li>
     </ul>
 </section>
