@@ -6,7 +6,7 @@
     <meta name="description" content="Catálogo de jogos desenvolvido em React">
     <meta name="keywords" content="React, TypeScript, Jogos, Catálogo">
     <meta name="author" content="Ana Alice Rodrigues">
-
+    <title>EPLAY - Catálogo de Jogos</title>
 </head>
 <body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; padding: 0;">
 
@@ -156,8 +156,8 @@ EPLAY/
 <section id="contato">
     <h2>Contato</h2>
     <ul>
-        <li><a href="https://www.linkedin.com/in/anaalice" target="_blank"><img src="https://img.shields.io/badge/Ana_Alice_Rodrigues-blue?style=for-the-badge" alt="Perfil de Ana Alice Rodrigues"></a></li>
-        
+        <li><a href="www.linkedin.com/in/anaalice20" target="_blank"><img src="https://img.shields.io/badge/Ana_Alice_Rodrigues-blue?style=for-the-badge" alt="Perfil de Ana Alice Rodrigues"></a></li>
+         <li><a href="https://linktr.ee/anaeanali5" target="_blank"><img src="https://img.shields.io/badge/Ana_Alice_Rodrigues-blue?style=for-the-badge" alt="Perfil de Ana Alice Rodrigues"></a></li>
     </ul>
 </section>
 
