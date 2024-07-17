@@ -22,6 +22,7 @@ export const Row = styled.div<RowProps>`
 
   @media (max-width: ${breakpoints.tablet}) {
     display: block;
+    margin-top: 16px;
   }
 `
 export const InputGroup = styled.div<InputGroupProps>`
